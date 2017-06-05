@@ -289,7 +289,7 @@ article {
 		right: 0;
 		@include transform(translateX(100%));
 		@include transition(transform 0.4s ease-in-out);
-		width: $largura-minima;
+		width: $largura-notas-rodape;
 		font-size: 0.9em;
 		background-color: hsl(0, 0%, 95%);
 		padding: 14px 28px;
@@ -309,7 +309,7 @@ article {
 			margin: 0;
 		}
 		div.texto{
-			
+
 		}
 	}
 }
