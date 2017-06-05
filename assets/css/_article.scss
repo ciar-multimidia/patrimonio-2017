@@ -62,6 +62,8 @@ article {
 	@include display(flex);
 	@include flex-direction(column);
 	@include align-items(center);
+	position: relative;
+	overflow-x: hidden;
 
 	// estilo padrao para os filhos do Article. Alguns elementos sobrepoem esse estilo de forma individual logo abaixo.
 	$margem: 1em;
@@ -278,21 +280,40 @@ article {
 		}
 	}
 
+	$largura-notas-rodape: 360px;
+
 	div.nota-rodape{
 		display: none;
+		@include flex-direction(column);
+		position: absolute;
+		right: 0;
+		@include transform(translateX(100%));
+		@include transition(transform 0.4s ease-in-out);
 		width: $largura-minima;
 		font-size: 0.9em;
 		background-color: hsl(0, 0%, 95%);
 		padding: 14px 28px;
 		line-height: 1.4em;
-		&:before{
-			content: attr(data-numero);
-			font-weight: bold;
-			display: inline;
+		&.db{
+			@include display(flex);
+		}
+		&.visivel{
+			@include transform(translateX(0%));
 		}
 
+		button.fechar{
+			@include appearance(none);
+			border: 0px solid transparent;
+			background-color: transparent;
+			padding: 0;
+			margin: 0;
+		}
+		div.texto{
+			
+		}
 	}
 }
+
 
 
 

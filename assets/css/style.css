@@ -690,7 +690,9 @@ article {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center; }
+  -ms-flex-align: center;
+  position: relative;
+  overflow-x: hidden; }
   article > * {
     width: 720px;
     margin-top: 1em; }
@@ -932,15 +934,55 @@ article {
       display: inline; }
   article div.nota-rodape {
     display: none;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    -moz-transition: -moz-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     width: 720px;
     font-size: 0.9em;
     background-color: #f2f2f2;
     padding: 14px 28px;
     line-height: 1.4em; }
-    article div.nota-rodape:before {
-      content: attr(data-numero);
-      font-weight: bold;
-      display: inline; }
+    article div.nota-rodape.db {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    article div.nota-rodape.visivel {
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transform: translateX(0%); }
+    article div.nota-rodape button.fechar {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      border: 0px solid transparent;
+      background-color: transparent;
+      padding: 0;
+      margin: 0; }
 
 #rodape {
   width: 100%;
