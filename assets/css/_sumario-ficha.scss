@@ -41,6 +41,7 @@
 	    		display: block;
 	    		float: left;
 	    		clear: both;
+	    		margin: 12px 0;
 
 	    		&:before {
 	    			content:'\2015';
@@ -54,7 +55,7 @@
 
 	    	ul {
 	    		li {
-	    			margin: 12px 0 12px 20px;
+	    			margin-left: 20px;
 	    			&:before {content:'\21B3';}
 	    		}
 	    	}
@@ -83,38 +84,44 @@
     }
 
 
-    div.ficha {
-	    @include flex-basis(100%);
-	    @include display(flex);
-	    @include flex-direction(row);
-	    @include flex-wrap(wrap);
-	    @include justify-content(space-between); 
-	    background: transparent; border: 0; 
-	    padding: 0;
+  //   div.ficha {
+	 //    @include flex-basis(100%);
+	 //    @include display(flex);
+	 //    @include flex-direction(row);
+	 //    @include flex-wrap(wrap);
+	 //    @include justify-content(space-between); 
+	 //    background: transparent; border: 0; 
+	 //    padding: 0;
 		
-		& > div {
-			@include flex-basis(calc(50% - 20px));
+		// & > div {
+		// 	@include flex-basis(calc(50% - 20px));
 
-			img {max-width: 100%; text-align: center; display: block; margin: 0 auto;}
-		}
+		// 	img {max-width: 100%; text-align: center; display: block; margin: 0 auto;}
+		// }
 
-		.catalografica {
-			border: 1px solid #fff; width: 100%; 
-			img {width: 100%; height: auto;}
+		// .catalografica {
+		// 	border: 1px solid #fff; width: 100%; 
+		// 	img {width: 100%; height: auto;}
 
-			.titulo {width: 100%; font-size: 1.4em; border-bottom: 1px solid #fff; padding: 15px}
+		// 	.titulo {width: 100%; font-size: 1.4em; border-bottom: 1px solid #fff; padding: 15px}
 
-			.codigo {
-				width: 8%; float: left; padding: 15px 15px 0 15px; font-size: 1.1em;
+		// 	.codigo {
+		// 		width: 8%; float: left; padding: 15px 15px 0 15px; font-size: 1.1em;
 
-				p, .dados p {margin-top: 0}
-			}
+		// 		p, .dados p {margin-top: 0}
+		// 	}
 			
-			.dados {width: 90%; float: right; text-align: left; padding: 15px 15px 0 15px;
-				.cdu {text-align: right;}
-			}
-		}
-    }
+		// 	.dados {width: 90%; float: right; text-align: left; padding: 15px 15px 0 15px;
+		// 		.cdu {text-align: right;}
+		// 	}
+		// }
+  //   }
+  	.logos {
+  		@include flex-basis(100%);
+		background: transparent; border: 0; 
+	    padding: 0;
+  		img {max-width: 100%; text-align: center; display: block; margin: 0 auto;}
+  	}
 }
 
 
