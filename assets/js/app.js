@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 		<header id="topo">\
 			<div class="container">\
 				<a href="../../../index.html" class="marca">\
-					<span>Curso de Especialização em</span>\
+					<span>Resultados e Contribuições para o Curso de Especialização Interdisciplinar em</span>\
 					<span class="curso-nome">Patrimônio, Direitos Culturais e Cidadania</span>\
 					<span class="livro"></span>\
 				</a>\
