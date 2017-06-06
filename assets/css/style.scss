@@ -1,6 +1,7 @@
 @import 'normalize';
 @import 'bourbon/bourbon';
 @import 'padroes';
+@import 'jquery.fancybox.min';
 
 body { 
 	position: relative; 
@@ -40,6 +41,10 @@ body.livro1 {
 		}
 
 		span.numero-rodape {border-color: darken($livro1,10%); background: lighten($livro1,45%);}
+		div.nota-rodape { 
+			.posrel{border-color: darken($livro1,10%);}
+			p.numero-equivalente{border-color: darken($livro1,10%); background: lighten($livro1,45%);}
+		}
 	}
 
 	#rodape {
@@ -72,6 +77,10 @@ body.livro2 {
 		}
 
 		span.numero-rodape {border-color: darken($livro2,10%); background: lighten($livro2,35%);}
+		div.nota-rodape { 
+			.posrel{border-color: darken($livro2,10%);}
+			p.numero-equivalente{border-color: darken($livro2,10%); background: lighten($livro2,35%);}
+		}
 	}
 
 	#rodape {outline-color: $livro2;
@@ -103,6 +112,10 @@ body.livro3 {
 		}
 
 		span.numero-rodape {border-color: darken($livro3,10%); background: lighten($livro3,30%);}
+		div.nota-rodape { 
+			.posrel{border-color: darken($livro3,10%);}
+			p.numero-equivalente{border-color: darken($livro3,10%); background: lighten($livro3,30%);}
+		}
 	}
 
 	#rodape {outline-color: $livro3;
@@ -133,6 +146,10 @@ body.livro4 {
 		}
 
 		span.numero-rodape {border-color: darken($livro4,10%); background: lighten($livro4,17%);}
+		div.nota-rodape { 
+			.posrel{border-color: darken($livro4,10%);}
+			p.numero-equivalente{border-color: darken($livro4,10%); background: lighten($livro4,17%);}
+		}
 	}
 
 	#rodape {outline-color: $livro4;
