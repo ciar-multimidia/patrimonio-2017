@@ -107,7 +107,15 @@ jQuery(document).ready(function($) {
 		});
 
 		$(el).on('click', function(event) {
-			$.fancybox.open(fancyboxArgs, {loop : false});
+			$.fancybox.open(
+				fancyboxArgs, 
+				{
+					loop : false,
+					gutter: 0,
+					slideShow: false,
+					fullScreen: false,
+					
+				});
 			/* Act on the event */
 		});
 	});
