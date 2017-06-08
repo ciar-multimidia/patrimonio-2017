@@ -1209,6 +1209,10 @@ body {
       #topo .container .organizacao strong {
         font-size: 1.2em;
         text-transform: uppercase; }
+  #topo.folharosto {
+    height: 400px; }
+    #topo.folharosto .container {
+      height: 400px; }
 
 header#cabecalho {
   position: fixed;
