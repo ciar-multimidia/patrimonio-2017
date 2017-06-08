@@ -65,5 +65,20 @@
 				}
 			}
 		}
+
+		.organizacao {
+			display: inline-block;
+			color: #fff;
+			font-weight: normal;
+			font-size: 15px;
+			text-align: right;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+			@include transform(translateY(-50%));
+
+			strong {font-size: 1.2em; text-transform: uppercase;}
+		}
 	}
 }

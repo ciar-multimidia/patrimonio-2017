@@ -1142,6 +1142,24 @@ body {
           height: 10px;
           line-height: 0;
           font-size: 55px; }
+    #topo .container .organizacao {
+      display: inline-block;
+      color: #fff;
+      font-weight: normal;
+      font-size: 15px;
+      text-align: right;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      #topo .container .organizacao strong {
+        font-size: 1.2em;
+        text-transform: uppercase; }
 
 header#cabecalho {
   position: fixed;
