@@ -4,7 +4,12 @@ jQuery(document).ready(function($) {
 	$('a.btn-subir').on('click', function(){
 	  $('html, body').animate({scrollTop:0},1100);
 	  return false;
-	});	
+	});
+
+	$('article').on('click', function(event) {
+		console.log(event.pageY- $(this).offset().top);
+		/* Act on the event */
+	});
 
 	var notasrodape = $('.nota-rodape');
 	var btrodape = $('.numero-rodape');
@@ -14,13 +19,17 @@ jQuery(document).ready(function($) {
 		notasrodape.each(function(index, el) {
 			var datanumero = $(el).attr('data-numero');
 			var btEquivalente = btrodape.filter('[data-numero=\''+datanumero+'\']');
+			var alturaRodape = $(el).height();
+			var topCalculado = btEquivalente.position().top - alturaRodape/2;
+
+
 
 			var novoTop = (function(){
-				var topCalculado = btEquivalente.position().top - $(el).outerHeight()/2;
+
 				if (topCalculado < 0) {
 					return 1;
-				} else if(topCalculado > ( $(el).closest('article').height() + $(el).height() ) ){
-					return ($(el).closest('article').height() + $(el).height() - 1);
+				} else if(topCalculado + alturaRodape > $(el).closest('article').height() ){
+					return ($(el).closest('article').height() - alturaRodape - 10);
 				} else{
 					return topCalculado;
 				}
@@ -30,14 +39,7 @@ jQuery(document).ready(function($) {
 
 		});	
 	}
-	attPosRodape();
-
-
-
-	// Atualizar posições sempre que o usuário redimensionar a janela do navegador.
-	$(window).on('resize', function(event) {
-		attPosRodape();
-	});
+	
 
 
 
@@ -57,6 +59,15 @@ jQuery(document).ready(function($) {
 		});
 
 	});	
+
+	attPosRodape();
+
+
+
+	// Atualizar posições sempre que o usuário redimensionar a janela do navegador.
+	$(window).on('resize', function(event) {
+		attPosRodape();
+	});
 
 	btrodape.on('click', function(event) {
 
