@@ -1210,9 +1210,22 @@ body {
         font-size: 1.2em;
         text-transform: uppercase; }
   #topo.folharosto {
-    height: 400px; }
+    height: 500px; }
     #topo.folharosto .container {
-      height: 400px; }
+      height: 500px; }
+      #topo.folharosto .container a.sumario {
+        top: 25px;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0); }
+      #topo.folharosto .container span.dados {
+        margin: 30px 0 10px;
+        padding: 10px;
+        display: inline-block;
+        font-size: 0.9em;
+        border: 2px solid #fff; }
 
 header#cabecalho {
   position: fixed;
@@ -2055,6 +2068,8 @@ body.livro1 #topo {
     color: #8dc63f; }
   body.livro1 #topo .container a.sumario {
     border-color: #8dc63f; }
+  body.livro1 #topo .container span.dados {
+    border-color: #8dc63f; }
 body.livro1 h1, body.livro1 h2, body.livro1 h3, body.livro1 h4, body.livro1 h5, body.livro1 h6 {
   color: #72a230; }
 body.livro1 article header.cabecalho div.autores_anexos div.autores {
@@ -2082,6 +2097,8 @@ body.livro2 #topo {
   body.livro2 #topo .container a.marca span.livro {
     color: #ffc52a; }
   body.livro2 #topo .container a.sumario {
+    border-color: #ffc52a; }
+  body.livro2 #topo .container span.dados {
     border-color: #ffc52a; }
 body.livro2 h1, body.livro2 h2, body.livro2 h3, body.livro2 h4, body.livro2 h5, body.livro2 h6 {
   color: #dda000; }
@@ -2111,6 +2128,8 @@ body.livro3 #topo {
     color: #70cbd1; }
   body.livro3 #topo .container a.sumario {
     border-color: #70cbd1; }
+  body.livro3 #topo .container span.dados {
+    border-color: #70cbd1; }
 body.livro3 h1, body.livro3 h2, body.livro3 h3, body.livro3 h4, body.livro3 h5, body.livro3 h6 {
   color: #359fa6; }
 body.livro3 article header.cabecalho div.autores_anexos div.autores {
@@ -2138,6 +2157,8 @@ body.livro4 #topo {
   body.livro4 #topo .container a.marca span.livro {
     color: #f6a1b4; }
   body.livro4 #topo .container a.sumario {
+    border-color: #f6a1b4; }
+  body.livro4 #topo .container span.dados {
     border-color: #f6a1b4; }
 body.livro4 h1, body.livro4 h2, body.livro4 h3, body.livro4 h4, body.livro4 h5, body.livro4 h6 {
   color: #f06484; }
