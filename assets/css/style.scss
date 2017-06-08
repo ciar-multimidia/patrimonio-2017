@@ -1,7 +1,10 @@
+@charset "UTF-8";
+
+
 @import 'normalize';
 @import 'bourbon/bourbon';
 @import 'padroes';
-@import 'jquery.fancybox.min';
+@import 'jquery.fancybox';
 
 body { 
 	position: relative; 
@@ -11,6 +14,7 @@ body {
 	color: hsl(0,0, 25%);
 }
 
+@import 'custom.fancybox';
 @import 'cabecalho';
 @import 'article';
 @import 'rodape';
@@ -20,6 +24,7 @@ body {
 
 /////////////////////////////////////
 ///////////////// excessoes das cores
+
 
 body.livro1 {
 	#topo {
