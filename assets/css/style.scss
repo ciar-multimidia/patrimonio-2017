@@ -33,7 +33,7 @@ body.livro1 {
 			a.marca span.livro {color: $livro1}
 			a.sumario {border-color: $livro1}
 
-			span.dados {border-color: $livro1;}
+			.dadosinfo {border-color: $livro1;}
 		}
 	}
 
@@ -71,7 +71,7 @@ body.livro2 {
 			a.marca span.livro {color: $livro2}
 			a.sumario {border-color: $livro2}
 
-			span.dados {border-color: $livro2;}
+			.dadosinfo {border-color: $livro2;}
 		}
 	}
 
@@ -108,7 +108,7 @@ body.livro3 {
 			a.marca span.livro {color: $livro3}
 			a.sumario {border-color: $livro3}
 
-			span.dados {border-color: $livro3;}
+			.dadosinfo {border-color: $livro3;}
 		}
 	}
 
@@ -144,7 +144,7 @@ body.livro4 {
 			a.marca span.livro {color: $livro4}
 			a.sumario {border-color: $livro4}
 
-			span.dados {border-color: $livro4;}
+			.dadosinfo {border-color: $livro4;}
 		}
 	}
 

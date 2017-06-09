@@ -224,6 +224,25 @@ article {
 		width: $largura-minima;
 	}
 
+	.catalografica {
+		width: $largura-minima;
+		font-size: 0.9em;
+		border: 1px solid; 
+		img {width: 100%; height: auto;}
+
+		p {margin: 0 0 20px;}
+
+		.titulo {position: relative; width: 100%; font-size: 1.1em; border-bottom: 1px solid; padding: 10px}
+
+		.codigo {position: relative; 
+			width: 8%; float: left; padding: 15px 15px 0 15px; font-size: 1.1em;
+		}
+		
+		.dados {position: relative; width: 90%; float: right; text-align: left; padding: 15px 15px 0 15px;
+			.cdu {text-align: right;}
+		}
+	}
+
 	blockquote{
 		width: $largura-minima;
 		padding-left: 60px;

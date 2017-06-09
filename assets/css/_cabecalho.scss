@@ -2,6 +2,7 @@
 	width: 100%;
 	height: 135px;
 	border-bottom: 4px solid #fff;
+	color: #fff;
 	outline: 2px solid $padrao;
 	background: transparent url('../img/bg.jpg') center center no-repeat / cover;
 
@@ -83,21 +84,23 @@
 	}
 
 	&.folharosto {
-		height: 500px;
+		height: 550px;
 
 		.container {
-			height: 500px;
+			height: 550px;
 
-			a.sumario {
+			a.marca {
 				top: 25px;
 				@include transform(translateY(0));
 			}
 
-			span.dados {
-				margin: 30px 0 10px;
+			.dadosinfo {
+				position: absolute; left: 0;
+				bottom: 25px;
+				height: 360px;
 				padding: 10px;
 				display: inline-block;
-				font-size: 0.9em;
+				font-size: 0.9em; width: 48%; 
 				border: 2px solid #fff;
 			}
 		}
