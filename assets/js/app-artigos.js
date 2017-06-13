@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 		"Volume 1: Identidade e Patrimônio Culturais",
 		"Volume 2: Acesso e Participação à Vida cultural &bull; Informação e Comunicação &bull; Responsabilidade dos Atores Públicos",
 		"Volume 3: Educação e Formação &bull; Cooperação Cultural &bull; Princípios de Administração Democrática",
-		"Volume 4: Acesso e Participação 1a Vida Cultural &bull; Informação e Comunicação"
+		"Volume 4: Acesso e Participação à Vida Cultural &bull; Informação e Comunicação"
 	];
 
 	var templateHeader = $('\
