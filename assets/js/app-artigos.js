@@ -2,8 +2,8 @@ jQuery(document).ready(function($) {
 	var corpo = $('body');
 	var titulosVolumes = [
 		"Volume 1: Identidade e Patrimônio Culturais",
-		"Volume 2: Acesso e Participação à Vida cultural &bull; Informação e Comunicação &bull; Responsabilidade dos Atores Públicos",
-		"Volume 3: Educação e Formação &bull; Cooperação Cultural &bull; Princípios de Administração Democrática",
+		"Volume 2: Identidade e Patrimônio Culturais • Cooperação Cultural Princípios da Administração Democrática",
+		"Volume 3: Educação e Formação • Responsabilidade dos Atores Públicos",
 		"Volume 4: Acesso e Participação à Vida Cultural &bull; Informação e Comunicação"
 	];
 
