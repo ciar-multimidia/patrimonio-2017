@@ -2065,6 +2065,11 @@ body.portal {
         margin-left: 20px; }
         .sumario > div ul ul li:before {
           content: '\21B3'; }
+        .sumario > div ul ul li a span {
+          display: block;
+          font-style: italic;
+          font-size: 0.9em;
+          margin-top: 0.6em; }
     .sumario > div.livro1 {
       border-left-color: #8dc63f; }
       .sumario > div.livro1 h2, .sumario > div.livro1 ul li a.linkficha, .sumario > div.livro1 ul li:before {
