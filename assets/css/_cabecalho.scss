@@ -41,6 +41,7 @@
 			padding: 10px;
 			top: 50%;
 			right: 0;
+			word-break: normal;
 			@include transform(translateY(-50%));	
 			color: #fff;
 		    width: 85px;
