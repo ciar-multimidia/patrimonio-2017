@@ -2064,6 +2064,11 @@ body.portal {
           margin-right: 10px; }
         .sumario > div ul li:last-child {
           margin-bottom: 15px; }
+        .sumario > div ul li a span {
+          display: block;
+          font-style: italic;
+          font-size: 0.9em;
+          margin-top: 0.6em; }
       .sumario > div ul ul li {
         margin-left: 20px; }
         .sumario > div ul ul li:before {

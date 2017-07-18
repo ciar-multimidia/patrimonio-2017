@@ -55,6 +55,15 @@
 	    		}
 
 	    		&:last-child {margin-bottom: 15px;}
+
+	    		a{
+	    			span{
+	    				display: block;
+	    				font-style: italic;
+	    				font-size: 0.9em;
+	    				margin-top: 0.6em;
+	    			}
+	    		}
 	    	}
 
 	    	ul {
