@@ -1,5 +1,5 @@
 body.portal {
-	background: transparent url('../img/bg.jpg') center center no-repeat fixed / cover;
+	background: transparent url('../img/bg.jpg') fixed no-repeat center center / cover;
 
 	#topo, #rodape {
 		.container {width: calc(100% - 40px);}
